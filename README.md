@@ -8,14 +8,13 @@ A simple tool to convert video to slides. Only works when there is no other movi
 - numpy 
 
 ## usage
-Single File conversion
+**Single File conversion**
 ```
 python slideextractor.py --source $SOURCEFILE --out $OUTFOLDER 
 ```
 Where $SOURCEFILE is the path to the video(e.g. 'video.mp4'), and $OUTFOLDER is the folder where the slides would be exported to. 
-Multifile conversion
+**Multifile conversion**
 ```
-python batch_conversion.py --source $SOURCEFOLDER --out $OUTFOLDER 
+python batchconversion.py --source $SOURCEFOLDER --out $OUTFOLDER 
 ```
 Where $SOURCEFOLDER is the path to the video folder, and $OUTFOLDER is the folder where the slides would be exported to. 
-Multifile conversion
