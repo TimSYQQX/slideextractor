@@ -1,5 +1,5 @@
 # slideextractor
-A simple tool to convert video to slides. Only works when there is not other moving objects in the video other than slides. More features may be added in the future. 
+A simple tool to convert video to slides. Only works when there is no other moving objects in the video other than slides. More features may be added in the future. 
 
 ## Dependency 
 python3
