@@ -3,11 +3,12 @@ A simple tool to convert video to slides. Only works when there is not other mov
 
 ## Dependency 
 python3
-opencv 
+opencv
+tqdm
 numpy 
 
 ## usage
 ```
-slideextractor.py --source $SOURCEFILE --destination $OUTFOLDER 
+slideextractor.py --source $SOURCEFILE --out $OUTFOLDER 
 ```
 Where $SOURCEFILE is the path to the video(e.g. 'video.mp4'), and $OUTFOLDER is the folder where the slides would be exported to. 
