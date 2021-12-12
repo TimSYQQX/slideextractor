@@ -36,15 +36,17 @@ def video2image(source_file, out_folder):
             if abs(new_checksum - checksum) >= 1:
                 cv2.imwrite(f'{out_folder}/{next(counter)}.png', frame)
                 checksum = new_checksum
-        else: 
+        else:
             break
     cap.release()
 
+
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Convert video to image folder. ')
-    parser.add_argument('--source', metavar='-s', type=str, 
+    parser = argparse.ArgumentParser(
+        description='Convert video to image folder. ')
+    parser.add_argument('--source', metavar='-s', type=str,
                         help='Video file to convert')
-    parser.add_argument('--out', metavar='-o', type=str,  
+    parser.add_argument('--out', metavar='-o', type=str,
                         help='Destination folder where the images will be saved')
 
     args = parser.parse_args()

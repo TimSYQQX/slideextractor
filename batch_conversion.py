@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+
 from slideextractor import video2image
 
 
@@ -18,8 +19,9 @@ def batch_convert(source_folder, out_folder):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Convert batch of video to image folders. ')
-    parser.add_argument('--source', metavar='-s', type=str, default='source', 
+    parser = argparse.ArgumentParser(
+        description='Convert batch of video to image folders. ')
+    parser.add_argument('--source', metavar='-s', type=str, default='source',
                         help='Video folder to convert')
     parser.add_argument('--out', metavar='-o', type=str,  default='out',
                         help='Destination folder where the images will be saved')
